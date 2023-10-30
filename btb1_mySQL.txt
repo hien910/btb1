@@ -1,0 +1,28 @@
+--Tạo 1 bảng Person với các thông tin sau:
+--id: kiểu số nguyên,
+--fullname: chữ,
+--job: chữ,
+--birthday: ngày/tháng/năm,
+--salary: kiểu số,
+--address: chữ.
+--Thêm 10 bản ghi vào bảng trên.
+
+create table Person(
+	id int,
+    fullname text,
+    job text,
+    birthday date,
+    salary int,
+    address text)
+    insert into Person(id, fullname, job, birthday, salary, address)
+    values
+    (2,'b', 'teacher', '1999-09-10', 1500, 'ha noi'),
+     (3,'c', 'student', '2004-11-10', 100, 'hai phong'),
+      (4,'d', 'it', '2001-09-19', 3000, 'ha noi'),
+       (5,'e', 'engineer', '1998-04-10', 2500, 'ha noi'),
+        (6,'f', 'design', '2000-09-10', 2000, 'ha noi'),
+	(7,'g', 'doctor', '1988-10-13', 2900, 'ha noi'),
+	(8,'h', 'lawer', '1994-03-10', 2200, 'ha noi'),
+	(9,'i', 'singer', '2002-09-10', 1100, 'ha noi'),
+	(10,'j', 'worker', '1999-02-10', 900, 'ha noi')
+     select * from Person;
